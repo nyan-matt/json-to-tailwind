@@ -6,21 +6,8 @@
     <title>JSON to Tailwind Proof of Concept</title>
     <link rel="stylesheet" href="/src/style.css">
 </head>
-<body class="bg-gray-50 min-h-screen flex flex-col items-center py-8">
-    <h1 class="text-2xl font-bold mb-4">JSON to Tailwind POC</h1>
-    <div class="w-full max-w-4xl flex flex-col gap-4">
-        <label class="font-semibold">Paste Figma JSON:</label>
-        <textarea id="json-input" class="w-full h-48 p-4 border rounded font-mono text-sm" placeholder="Paste your Figma JSON here..."></textarea>
-        <button id="generate-btn" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Generate</button>
-        <div>
-            <label class="font-semibold">Generated HTML:</label>
-            <pre id="code-preview" class="bg-gray-100 p-4 rounded overflow-x-auto text-xs"></pre>
-        </div>
-        <div>
-            <label class="font-semibold">Preview:</label>
-            <div id="html-preview" class="bg-white p-6 rounded border min-h-[100px]"></div>
-        </div>
-    </div>
-    <script type="module" src="/src/main.js"></script>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
