@@ -78,7 +78,7 @@ function mapFigmaNodeToHtml(node, parent) {
     if (Comp) {
       return `<${compName} ${propsString} />`;
     } else {
-      return `<div class="component-placeholder">Unknown component: ${compName}</div>`;
+      return `<div class="component-placeholder" style="width:${node.width}px;height:${node.height}px;">Unknown: ${compName}</div>`;
     }
   }
 
