@@ -4,6 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
+        "generate:theme": "node scripts/generate-css-vars.js",
         "build": "vite build",
         "preview": "vite preview"
     },

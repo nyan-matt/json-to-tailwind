@@ -1,9 +1,11 @@
+@import './generated-theme.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Component placeholder */
 .component-placeholder {
+    font-size: 13px;
     display: inline-block;
     border: 1px dashed #f87171;   /* tailwind’s red-400 */
     color: #991b1b;               /* tailwind’s red-800 */

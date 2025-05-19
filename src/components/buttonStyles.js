@@ -1,8 +1,7 @@
-import { tokens } from '../theme/buttonTokens';
-
+// Using CSS-vars for semantic theming, no component tokens needed
 export const TYPE = {
-  Primary: `bg-${tokens.primaryBg} text-${tokens.primaryText} hover:bg-${tokens.primaryHover}`,
-  Secondary: `bg-${tokens.secondaryBg} text-${tokens.secondaryText} border border-${tokens.secondaryBorder} hover:bg-${tokens.secondaryBg}`,
+  Primary: 'bg-accent-primary-default text-text-inverse icon-icon-inverse hover:bg-accent-primary-strong',
+  Secondary: 'bg-accent-neutral-weakest text-text-default icon-icon-default hover:bg-accent-neutral-weaker',
 };
 
 export const STATE = {
@@ -12,7 +11,7 @@ export const STATE = {
 };
 
 export const SIZE = {
-  Small: `px-2 py-1 text-${tokens.smallFont}`,
-  Default: `px-4 py-2 text-${tokens.baseFont}`,
-  Large: `px-6 py-3 text-${tokens.largeFont}`,
+  Small: 'px-2 py-1 text-[var(--font-size-small)]',
+  Default: 'px-4 py-2 text-[var(--font-size-base)]',
+  Large: 'px-6 py-3 text-[var(--font-size-large)]',
 };

@@ -14,7 +14,7 @@ export default function MyButton({
   ...rest
 }) {
   const classes = clsx(
-    'rounded transition flex items-center justify-center gap-2',
+    'rounded transition flex items-center justify-center gap-2 var(--spacing-xs)',
     TYPE[type],
     SIZE[size],
     STATE[state],
