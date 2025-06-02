@@ -1,7 +1,10 @@
 // Using CSS-vars for semantic theming, no component tokens needed
 export const TYPE = {
   Primary: 'bg-accent-primary-default text-text-inverse icon-icon-inverse hover:bg-accent-primary-strong',
-  Secondary: 'bg-accent-neutral-weakest text-text-default icon-icon-default hover:bg-accent-neutral-weaker',
+  Default: 'bg-accent-neutral-weakest text-text-default icon-icon-default hover:bg-accent-neutral-weaker',
+  Subtle: 'bg-background-default border border-border-subtle text-text-default icon-icon-default hover:bg-background-secondary',
+  Warning: 'bg-accent-warning-weaker border text-text-default icon-icon-default hover:bg-accent-warning-default',
+  Danger: 'bg-accent-danger-default text-text-inverse icon-icon-inverse hover:bg-accent-danger-strong',
 };
 
 export const STATE = {
@@ -11,7 +14,7 @@ export const STATE = {
 };
 
 export const SIZE = {
-  Small: 'px-2 py-1 text-[var(--font-size-small)]',
-  Default: 'px-4 py-2 text-[var(--font-size-base)]',
-  Large: 'px-6 py-3 text-[var(--font-size-large)]',
+  Small: 'text-[var(--font-size-xs)]',
+  Default: 'text-text-sm',
+  Large: 'text-[var(--font-size-md)]',
 };
